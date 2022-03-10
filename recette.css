@@ -1,0 +1,188 @@
+
+* /* en cas de depassement partout dans le code HTML */
+{
+    overflow: auto;
+}
+
+body 
+{
+    background-color: #8BA1BB;
+    font-family: Arial;
+}
+            
+div.contenu
+{
+    background-color: white;
+    margin: 60px 10% 80px 10%; /* haut droite bas gauche */
+    padding: 0px 30px 30px 30px;
+    min-width: 350px; /* Definit la taille de la fenetre */
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+}
+
+h1
+{
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+                        
+.centre /* prend en compte toute les categories où il y a ce nom */
+{
+    text-align: center;
+    width: 100%; /* Pour prendre en compte toute la taille de la fenetre */
+}
+                        
+p.description
+{
+    text-align: center;
+    /* max-width: 400px; Permet de limiter l'espace du texte */
+    /* background-color: yellow; */
+    display: inline-block;
+    font-size: 14px;
+}
+                                   
+div.description
+{
+    text-align: center;
+    /* background-color: blue; */
+}
+
+div.separateur
+{
+    width: 100px;
+    height: 2px;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+}
+            
+p.categorie
+{
+    background-color: black;
+    color: white;
+    display: inline-block; /* inline-block permet de controler plus de choses */
+    /* margin-left: 30px; */
+    margin-top: -15px;
+    margin-bottom: 0px;
+    padding: 8px 18px; /* espace autour du texte haut droite bas gauche */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+div.categorie
+{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    overflow: visible;
+}
+
+div.info
+{
+    position: relative; 
+}
+        
+table.info
+{
+    position: absolute; 
+    bottom:0; 
+    width: 100%; 
+    color: white; 
+    background-color: #6C829DC0; /* les deux derniers caracteres corrospond à la transporence : 00 à FF */
+    height: 80px;"
+}
+
+table.info td
+{
+    text-align: center; 
+    font-size: 14px; /* Taille de la police de caractere
+    vertical-align: top; /* Alignement en haut */
+}
+
+table.info th
+{
+    font-size: 16px;
+    vertical-align: bottom; /* Alignement en bas */
+    padding-bottom: 8px;
+}
+
+img.info
+{
+    display: block;
+    max-height: 400px; /* definit la taille de l'image */
+    object-fit: cover; /* permet de d'agrandir l'image dans la taille definit */
+    min-height: 200px;
+    background-color: gray;
+}
+
+div.colonne1
+{
+    /* background-color: lightblue; */
+    display: inline-block;
+    margin-right: 10%;
+}
+
+div.colonne2
+{
+    float: right;
+}
+
+/* div.colonne2, div.colonne2 regrouper les proprietés communes des differents DIV */
+div.colonne 
+{
+    width: 45%; /* total 90% pour les deux colonnes reste 10% */
+    margin-top: 20px; /* definit la marge en haut de la zone */
+}
+
+div.colonne h2
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 5px solid #6C829D; /* affiche une bordure en bas */
+    padding-bottom: 5px; /* marge interne en bas */
+}
+
+
+div.ingredients p
+{
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid lightgray;
+    padding: 8px 0;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+table.preparation p.numero
+{
+    background-color: #6C829D;
+    color: white;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 4px;
+    box-sizing: border-box;
+    /* border-radius: 4px; pour faire les coins arrondis */
+    border-radius: 50%; /* pour creer des ronds autour du texte */
+    margin: 0;
+}
+
+table.preparation td
+{
+    vertical-align: top;
+}
+
+table.preparation td.preparation_etape
+{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+table.preparation tr
+{
+    height: 40px;
+}
